@@ -1,0 +1,235 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: beige;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: blue;
+    position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  width: 0%;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s ease;
+}
+
+
+.nav-links a:hover::after{
+      width: 100%;
+      color:rgba(5, 168, 244, 0.683);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width:100px
+}
+.logo h2{
+    color: black;
+}
+#signUpBtn{
+    text-decoration: none;
+    margin-right: 15px;
+    color:blue;
+
+}
+#logInBtn{
+    background-color: rgba(13, 191, 218, 0.683);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+
+}
+
+.landing-page{
+    min-height: 109vh;
+    padding-top: 150px;
+    background:linear-gradient(rgba(0,0,0,0.5)0%,rgba(0,0,0,0)100%),url(/Images/m-monk-E813FON0wDQ-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition:background 1s ease-in-out;
+}
+.landing-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing-content{
+    flex: 1;
+    max-width:60%;
+     padding-right:0 40px;
+}
+#landing-image{
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+ #landing-image img {
+    
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+  object-fit: cover;
+}
+
+#bestP{
+    color:blue;
+    font-size: 200px;
+    
+}
+
+
+.landing-content #bestP{
+    color: black;
+    font-size: 40px;
+    display: block;
+    margin-left: 50px;
+    font-weight: bold;
+     margin-bottom: 10px;
+}
+.landing-content #secureP{
+    color: rgb(0, 21, 255);
+    margin-left: 50px;
+    font-size: 20px;
+   
+}
+.landing-content #quote{
+    width:650px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+    
+
+#enrollBtn,
+#learnMoreBtn {
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 30px;
+  border: none;
+  color: black;
+  font-size: 16px;
+  background-color: #0505f2af;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 40px;
+  transition: 2s ease-in-out;
+  text-decoration: none;
+}
+
+#enrollBtn{
+    margin-left: 42px;
+}
+
+#learnMoreBtn{
+    margin-left: 5px;
+}
+#enrollBtn,
+#learnMoreBtn:hover{
+    cursor: pointer;
+    background-color: cyan;
+    
+}
+#enrollBtn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0056b3, #003d80);
+}
+#learnMoreBtn:hover {
+  transform: scale(1.05);
+  background: #007bff;
+  color: #fff;
+}
+
+/*Css for the stats*/
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.stat-item h2 {
+  color: #007bff;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  color: #333;
+  font-size: 18px;
+}
+
+
+/*  Css for the about section*/
+.about-section{
+    min-height: 109vh;
+    background-color: whitesmoke;
+}
+#about-title{
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
