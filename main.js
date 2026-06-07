@@ -31,4 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
   counters.forEach(counter => {
     observer.observe(counter);
   });
+
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        navLinks.classList.remove("show");
+      }
+    });
+  }
 });
